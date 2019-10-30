@@ -1,5 +1,5 @@
 # Step 1: Source all necessary files
-for file in /Users/diederik/Dotfiles/dotfiles.d/*; do
+for file in /Users/diederik/.dotfiles/*; do
     source $file;
 done
 
