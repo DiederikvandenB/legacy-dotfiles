@@ -1,0 +1,9 @@
+alias ls="exa -a --icons ${@}"
+alias pa="php artisan"
+
+alias googledns="networksetup -setdnsservers Wi-Fi 8.8.8.8"
+alias routerdns="networksetup -setdnsservers Wi-Fi empty"
+
+alias repositories="cd /Users/diederik/Repositories"
+alias frontend="cd /Users/diederik/Repositories/easy-office-frontend"
+alias backend="cd /Users/diederik/Repositories/easy-office-laravel"

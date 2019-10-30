@@ -1,0 +1,7 @@
+export PATH=$PATH:/Users/diederik/.cargo/bin
+export PATH=$PATH:/Users/diederik/.composer/vendor/bin
+export PATH=$PATH:/usr/local/opt/node@10/bin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/bin
+
+# export PATH=$PATH:/usr/local/opt/php@7.3/sbin
