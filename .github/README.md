@@ -29,3 +29,4 @@ Note that we do not have persistent config files for:
 2. add bit about git global config / setting yadm git settings 
 3. think about keeping this repo public while keeping the github token in `000_settings` 
 4. alias rm so that it moves files to the trash
+5. figure out if we want to use the `per-directory-history` plugin of `oh-my-zsh`. This requires us to switch. Ideally we want the autosuggest to prioritize directory history over global history
