@@ -1,4 +1,4 @@
-# Plugins
+# Pluginsn
 robbyrussell/oh-my-zsh path:plugins/copybuffer
 robbyrussell/oh-my-zsh path:plugins/copydir
 robbyrussell/oh-my-zsh path:plugins/copyfile
@@ -11,8 +11,8 @@ robbyrussell/oh-my-zsh path:lib/clipboard.zsh
 robbyrussell/oh-my-zsh path:lib/completion.zsh
 robbyrussell/oh-my-zsh path:lib/history.zsh
 
-# Auto suggestions, completions and highlighting
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
+
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
