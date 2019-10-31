@@ -1,4 +1,5 @@
 function updateAntibody() {
     antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
-    rm .zcompdump*
+    rm ~/.zcompdump*
+		rm -rf ~/.zcompcache
 }
