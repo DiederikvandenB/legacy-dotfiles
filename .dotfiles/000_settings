@@ -7,7 +7,7 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=500
 export HIST_STAMPS="dd-mm-yyyy"
 
 setopt interactivecomments
-setopt EXTENDEDGLOB # Needed for autocompletion
+setopt EXTENDEDGLOB
 
 # Misc
 export HOMEBREW_GITHUB_API_TOKEN=1b4df94923c078ac1eb002ddf13da8c45bdb0503
