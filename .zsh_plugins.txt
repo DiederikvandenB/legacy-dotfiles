@@ -5,13 +5,15 @@ robbyrussell/oh-my-zsh path:lib/history.zsh
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 
+rupa/z
+caarlos0/ports
+
 # Plugins
 robbyrussell/oh-my-zsh path:plugins/copybuffer
 robbyrussell/oh-my-zsh path:plugins/copydir
 robbyrussell/oh-my-zsh path:plugins/copyfile
 robbyrussell/oh-my-zsh path:plugins/docker kind:fpath
 robbyrussell/oh-my-zsh path:plugins/gcloud
-# robbyrussell/oh-my-zsh path:plugins/per-directory-history
 
-zsh-users/zsh-syntax-highlighting
+zdharma/fast-syntax-highlighting
 zsh-users/zsh-history-substring-search
