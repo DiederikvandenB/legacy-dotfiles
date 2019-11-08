@@ -8,6 +8,7 @@ export HIST_STAMPS="dd-mm-yyyy"
 
 setopt interactivecomments
 setopt EXTENDEDGLOB
+setopt HIST_FIND_NO_DUPS
 
 # Misc
-export HOMEBREW_GITHUB_API_TOKEN=1b4df94923c078ac1eb002ddf13da8c45bdb0503
+export HOMEBREW_GITHUB_API_TOKEN=
