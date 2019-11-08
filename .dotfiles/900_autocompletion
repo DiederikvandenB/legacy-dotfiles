@@ -1,14 +1,9 @@
 # The autocompletion scripts are provided by ZSH antibody plugin manager
-# setopt EXTENDEDGLOB
-# autoload -Uz compinit
-# if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
-# 	compinit; echo "initialized new"
-# else
-# 	compinit -C; echo "initialized from cache"
-# fi;
-
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
   compinit
 done
 compinit -C
+
+# Then we load our own
+source /usr/local/etc/bash_completion.d/az
