@@ -1,6 +1,7 @@
 {
     "require": {
         "laravel/valet": "^2.5",
-        "hirak/prestissimo": "^0.3.9"
+        "hirak/prestissimo": "^0.3.9",
+        "laravel/installer": "^2.2"
     }
 }
