@@ -7,3 +7,12 @@ alias routerdns="networksetup -setdnsservers Wi-Fi empty"
 alias repositories="cd /Users/diederik/Repositories"
 alias frontend="cd /Users/diederik/Repositories/easy-office-frontend"
 alias backend="cd /Users/diederik/Repositories/easy-office-laravel"
+
+alias eo-develop-ssh="az webapp create-remote-connection \
+    --name easyoffice-api \
+    --resource-group Easyoffice \
+    --slot develop"
+alias eo-staging-ssh="az webapp create-remote-connection \
+    --name easyoffice-api \
+    --resource-group Easyoffice \
+    --slot staging"

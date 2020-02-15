@@ -14,8 +14,8 @@ Thumbs.db
 .Trashes
 
 # Webdevelopers
-vendor
-node_modules
+/vendor
+/node_modules
 .idea
 junit.xml
 .gitconfig

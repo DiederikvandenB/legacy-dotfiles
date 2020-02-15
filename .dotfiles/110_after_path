@@ -3,5 +3,5 @@ export PATH=$PATH:/Users/diederik/.composer/vendor/bin
 export PATH=$PATH:/usr/local/opt/node@10/bin
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/bin
-
-# export PATH=$PATH:/usr/local/opt/php@7.3/sbin
+export PATH=$PATH:/usr/local/texlive/2019basic/bin/x86_64-darwin
+export PATH=$PATH:/usr/local/opt/postgresql@11/bin

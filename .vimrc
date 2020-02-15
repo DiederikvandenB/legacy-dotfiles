@@ -85,6 +85,16 @@ set noswapfile
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
+" Custom shortcuts
+set <S-F13>=;2P         " Map Shift+F13 to the exit code
+set <S-F14>=;2Q         " Map Shift+F14 to the exit code
+set <S-F15>=;2R         " Map Shift+F15 to the exit code
+set <S-F16>=;2S         " Map Shift+F16 to the exit code
+noremap <S-F13> vi'     " Select everything in between single quotes
+noremap <S-F14> vi"     " Select everything in between double quotes
+noremap <S-F15> vi}     " Select everything in between curly brackets
+noremap <S-F16> vat     " Copy entire tag
+
 " Multi cursor keymap
 let g:multi_cursor_start_word_key      = '<C-n>'
 let g:multi_cursor_select_all_word_key = '<C-g>'
