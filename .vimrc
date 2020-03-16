@@ -5,6 +5,7 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 Plug 'rainglow/vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Color config
@@ -66,17 +67,22 @@ set tabstop=2
 set lbr
 set tw=500
 
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+" Auto indent
+set ai
+
+" Smart indent
+set si
+
+" Wrap lines
+set wrap
 
 " Set to auto read when a file is changed from the outside
 set autoread
 
 " Don't redraw while executing macros (good performance config)
-set lazyredraw
+" set lazyredraw
 
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
+" Turn backup off, since most stuff is in SVN, git etc anyway...
 set nobackup
 set nowb
 set noswapfile
@@ -85,24 +91,39 @@ set noswapfile
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
+" Ensure cursor switches to underline in insert mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+augroup myCmds
+au!
+autocmd VimEnter * silent !echo -ne "\e[2 q"
+augroup END
+
 " Custom shortcuts
-set <S-F13>=;2P         " Map Shift+F13 to the exit code
-set <S-F14>=;2Q         " Map Shift+F14 to the exit code
-set <S-F15>=;2R         " Map Shift+F15 to the exit code
-set <S-F16>=;2S         " Map Shift+F16 to the exit code
-noremap <S-F13> vi'     " Select everything in between single quotes
-noremap <S-F14> vi"     " Select everything in between double quotes
-noremap <S-F15> vi}     " Select everything in between curly brackets
-noremap <S-F16> vat     " Copy entire tag
+let mapleader=" "
+
+" Select everything between single quotes
+" map <Leader>' vi'
+" map <Leader>" vi"
+
+" map <Leader>{ vi}
+" map <Leader>} vt}
+
+" map <Leader>( vi)
+" map <Leader>) vt)
+
+" map <Leader>t vat
+" map <Leader>w viw
 
 " Multi cursor keymap
-let g:multi_cursor_start_word_key      = '<C-n>'
-let g:multi_cursor_select_all_word_key = '<C-g>'
-let g:multi_cursor_start_key           = 'g<C-n>'
-let g:multi_cursor_select_all_key      = 'g<A-n>'
-let g:multi_cursor_next_key            = '<C-n>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
 let g:multi_cursor_exit_from_visual_mode = 1
 let g:multi_cursor_exit_from_insert_mode = 1
+let g:multi_cursor_use_default_mapping = 0
+let g:multi_cursor_next_key            = '<C-g>'
+let g:multi_cursor_select_all_key      = '<C-n>'
+let g:multi_cursor_prev_key            = '<C-x>'
+let g:multi_cursor_quit_key            = '<Esc>'
+" let g:multi_cursor_start_word_key      = '<nop>'
+" let g:multi_cursor_select_all_word_key = '<Nop>'
+" let g:multi_cursor_start_key           = '<Nop>'
+" let g:multi_cursor_skip_key            = '<Nop>'

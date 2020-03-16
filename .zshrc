@@ -5,3 +5,6 @@ done
 
 # Step 2: Nothing!
 
+
+# Added by Krypton
+export GPG_TTY=$(tty)

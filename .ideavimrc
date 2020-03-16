@@ -1,0 +1,24 @@
+source ~/.vimrc
+set easymotion
+
+" Idea
+noremap <Leader>gb :action Git.Branches<CR>
+noremap <Leader>gr :action Git.ResolveConflicts<CR>
+noremap <Leader>gm :action Git.Menu<CR>
+noremap <Leader>gl :action Vcs.Show.Log<CR>
+
+noremap <Leader><Up> :action Unsplit<CR>
+noremap <Leader><Left> :action MoveEditorToOppositeTabGroup<CR>
+noremap <Leader><Right> :action MoveTabRight<CR>
+noremap <Leader><Down> :action NextSplitter<CR>
+
+noremap <Leader><Cr> :action CodeMenu<CR>
+noremap <Leader>o :action GotoDeclaration<CR>
+
+noremap <Leader>q :action HideActiveWindow<CR>
+noremap <Leader><Leader> :action HideAllWindows<CR>
+
+" Multi cursor keymap
+noremap <C-g> :action SelectNextOccurrence<CR>
+noremap <C-n> :action SelectAllOccurrences<CR>
+noremap <C-x> :action UnselectPreviousOccurrence<CR>
