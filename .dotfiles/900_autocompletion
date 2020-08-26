@@ -6,4 +6,4 @@ done
 compinit -C
 
 # Then we load our own
-source /usr/local/etc/bash_completion.d/az
+
